@@ -22,3 +22,16 @@ if (planRail && planNext) {
     });
   });
 }
+
+function positionPlanArrow() {
+  const section = document.querySelector('#planos');
+  const artwork = document.querySelector('.product-plan .plan-art');
+  if (!section || !artwork) return;
+  const sectionRect = section.getBoundingClientRect();
+  const artRect = artwork.getBoundingClientRect();
+  section.style.setProperty('--plan-arrow-top', (artRect.top - sectionRect.top + artRect.height / 2) + 'px');
+}
+positionPlanArrow();
+window.addEventListener('resize', positionPlanArrow);
+window.addEventListener('load', positionPlanArrow);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(positionPlanArrow);
