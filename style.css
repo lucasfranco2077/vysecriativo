@@ -224,3 +224,9 @@ header{margin:0;padding:0 5%;border-bottom:0}
 .hero-title-line{display:block;white-space:nowrap}
 @media(max-width:900px) and (min-width:601px){.hero-immersive h1{font-size:clamp(40px,5.5vw,49px)}}
 @media(max-width:600px){.hero-immersive h1{font-size:clamp(32px,8.8vw,44px);line-height:1.08}.hero-title-line{white-space:normal;text-wrap:balance}.hero-title-line:first-child{max-width:11ch}.hero-title-line:last-child{max-width:12ch}}
+
+/* Package inclusions are always visible, without a disclosure control. */
+.product-plan .inclusions-label{font-size:10px;line-height:1.6;color:#aaa;margin:0;padding:13px 0}
+.product-plan.professional .inclusions-label{color:#666}
+.plans .product-plan .plan-inclusions ul{display:block;margin:0 0 13px}
+@media(max-width:600px){.product-plan .inclusions-label{font-size:11px}}
