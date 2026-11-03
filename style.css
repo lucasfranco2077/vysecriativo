@@ -217,3 +217,10 @@ header{margin:0;padding:0 5%;border-bottom:0}
 @media(min-width:601px){.plans{padding-top:60px;padding-bottom:48px}.plans .section-top{margin-bottom:24px}.plans>h2{font-size:clamp(36px,3.6vw,56px)}}
 @media(max-width:1000px) and (min-width:601px){.plans .product-plan .plan-intro{min-height:155px;padding-left:21px;padding-right:21px}.plans .plan-actions{padding-left:21px;padding-right:21px}.plans .product-plan .plan-description{font-size:11px}}
 @media(max-width:600px){.plans .product-plan .plan-intro{min-height:155px;padding:25px 25px 0}.plans .plan-art{height:220px}.plans .plan-actions{padding:16px 25px 8px}.plans .plan-grid{margin-top:24px}.plans .product-plan .plan-details li{margin:10px 0}}
+
+/* Keep the headline phrases together rather than isolating a word. */
+.hero-immersive .hero-content{max-width:min(850px,100%)}
+.hero-immersive h1{font-size:clamp(46px,4.5vw,72px)}
+.hero-title-line{display:block;white-space:nowrap}
+@media(max-width:900px) and (min-width:601px){.hero-immersive h1{font-size:clamp(40px,5.5vw,49px)}}
+@media(max-width:600px){.hero-immersive h1{font-size:clamp(32px,8.8vw,44px);line-height:1.08}.hero-title-line{white-space:normal;text-wrap:balance}.hero-title-line:first-child{max-width:11ch}.hero-title-line:last-child{max-width:12ch}}
