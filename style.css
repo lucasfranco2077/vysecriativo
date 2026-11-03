@@ -140,3 +140,9 @@ footer small{border-top-color:#e5e5e8}
 .logo img{display:block;width:100%;height:auto;object-fit:contain}
 footer .logo{width:184px}
 @media(max-width:600px){.logo,footer .logo{width:157px;margin-left:-13px}}
+
+/* Shorter, delivery-led copy. */
+.hero h1{text-transform:none;font-size:clamp(50px,5.8vw,88px);line-height:1.02;letter-spacing:-2px}
+.process .steps{grid-template-columns:repeat(3,1fr)}
+.hero-copy .button{border-radius:30px;justify-content:center}
+@media(max-width:600px){.hero h1{font-size:clamp(42px,11.4vw,56px);letter-spacing:-1.4px}.process .steps{grid-template-columns:1fr;gap:24px}.process .steps h3{margin:13px 0 8px}.process .steps p{font-size:12px}.hero-copy .small{font-size:11px}.service-number{font-size:9px;letter-spacing:1px}}

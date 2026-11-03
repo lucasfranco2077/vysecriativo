@@ -1,4 +1,4 @@
-document.querySelectorAll('[data-contact]').forEach(link => {const service=link.dataset.service;const message=service?`Olá, VYSE! Gostaria de saber mais sobre ${service}.`:'Olá, VYSE! Quero conversar sobre vídeos estratégicos e tráfego pago para minha empresa.';link.href=`https://wa.me/5521972273385?text=${encodeURIComponent(message)}`;});
+document.querySelectorAll('[data-contact]').forEach(link => {const service=link.dataset.service;const message=service?`Olá, VYSE! Gostaria de saber mais sobre ${service}.`:'Olá, VYSE! Gostaria de um orçamento de vídeos para minha empresa.';link.href=`https://wa.me/5521972273385?text=${encodeURIComponent(message)}`;});
 document.getElementById('year').textContent=new Date().getFullYear();
 
 const planRail = document.querySelector('.plan-grid');
