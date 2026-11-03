@@ -18,4 +18,4 @@ Abra `index.html` no navegador. O site usa HTML, CSS e JavaScript e não precisa
 - WhatsApp: (21) 97227-3385
 - Instagram: [@vysecriativo](https://www.instagram.com/vysecriativo/)
 
-As fontes Barlow Condensed e DM Sans são carregadas pelo Google Fonts, com fontes locais de reserva.
+As fontes Myriad Pro (títulos) e Inter (textos e controles) são carregadas localmente de `assets/fonts/`, com `font-display: swap` e fontes alternativas de reserva. Os arquivos foram fornecidos pelo responsável pelo site.
