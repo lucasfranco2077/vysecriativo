@@ -153,3 +153,13 @@ footer .logo{width:184px}
 .film-frame{background-position:50% center}
 .campaign-preview{background-position:50% center}
 @media(max-width:600px){.hero-image{height:320px}.hero-image img{object-position:50% 0}.hero-image figcaption{font-size:7px;letter-spacing:1px}}
+
+/* Explain the value of production before inviting a commercial conversation. */
+.hero-copy{max-width:400px}
+.hero-copy>p{margin-bottom:18px}
+.hero-value{list-style:none;margin:0 0 25px;padding:0;color:#525259;font-size:12px;line-height:1.7}
+.hero-value li{position:relative;padding-left:14px;margin:8px 0}
+.hero-value li:before{content:'';width:4px;height:4px;background:#ff1e1e;position:absolute;left:0;top:8px}
+.hero-image{height:auto;aspect-ratio:1672/941}
+.hero-image img{height:100%;object-fit:cover;object-position:center}
+@media(max-width:600px){.hero-grid{gap:20px}.hero h1{font-size:clamp(40px,10.8vw,52px);line-height:1.04}.hero-copy>p{font-size:14px;line-height:1.7;margin-bottom:15px}.hero-value{font-size:12px;margin-bottom:22px}.hero-value li{margin:7px 0}.hero-image{height:auto;aspect-ratio:1672/941}.hero-image img{object-position:center}.hero-image figcaption{padding:28px 12px 12px;font-size:6px;letter-spacing:.6px}}
