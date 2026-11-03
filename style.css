@@ -163,3 +163,25 @@ footer .logo{width:184px}
 .hero-image{height:auto;aspect-ratio:1672/941}
 .hero-image img{height:100%;object-fit:cover;object-position:center}
 @media(max-width:600px){.hero-grid{gap:20px}.hero h1{font-size:clamp(40px,10.8vw,52px);line-height:1.04}.hero-copy>p{font-size:14px;line-height:1.7;margin-bottom:15px}.hero-value{font-size:12px;margin-bottom:22px}.hero-value li{margin:7px 0}.hero-image{height:auto;aspect-ratio:1672/941}.hero-image img{object-position:center}.hero-image figcaption{padding:28px 12px 12px;font-size:6px;letter-spacing:.6px}}
+
+/* Integrated photographic opening. */
+.hero-immersive{position:relative;isolation:isolate;overflow:hidden;margin:18px 3% 0;padding:68px 5% 26px;border-radius:28px;background:#101010;color:#fff;min-height:700px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-media{position:absolute;inset:0;z-index:-2}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:60% center;display:block}
+.hero-immersive:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(5,7,8,.92) 0%,rgba(5,7,8,.8) 28%,rgba(5,7,8,.35) 68%,rgba(5,7,8,.16) 100%),linear-gradient(0deg,rgba(5,7,8,.95),transparent 38%)}
+.hero-content{max-width:700px;padding-bottom:42px}
+.hero-immersive .eyebrow{color:#f5f5f7;font-size:9px;letter-spacing:1.8px;margin-bottom:28px}
+.hero-immersive h1{font-size:clamp(48px,5.1vw,78px);line-height:1.04;letter-spacing:-2px;margin-bottom:26px;text-transform:none}
+.hero-immersive h1 em{color:#ff4d42}
+.hero-immersive .hero-copy{max-width:430px}
+.hero-immersive .hero-copy>p{color:#f3f3f3;font-size:15px;line-height:1.75;margin-bottom:15px}
+.hero-immersive .hero-copy>.hero-support{font-size:12px;color:#d0d0d3;line-height:1.75;margin-bottom:26px}
+.hero-immersive .button{width:fit-content;padding:16px 24px;font-size:12px;border-radius:28px;background:#ff1e1e;color:#fff}
+.hero-production{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;border-top:1px solid #ffffff30;padding:23px 0 30px}
+.hero-production>div{padding-right:10px}
+.hero-production span{font-size:8px;letter-spacing:1.5px;color:#ff8077}
+.hero-production p{font-size:11px;line-height:1.7;color:#e2e2e5;margin-top:8px}
+.hero-illustration{position:absolute;right:26px;bottom:13px;font-size:7px;letter-spacing:.6px;color:#bdbdc4}
+@media(min-width:1500px){.hero-immersive{min-height:760px}.hero-content{padding-bottom:65px}}
+@media(max-width:900px) and (min-width:601px){.hero-immersive{padding:48px 5% 24px;min-height:690px}.hero-immersive h1{font-size:58px}.hero-content{max-width:580px}}
+@media(max-width:600px){.hero-immersive{margin:8px 12px 0;border-radius:22px;padding:200px 24px 24px;min-height:0;display:block}.hero-media img{height:340px;object-fit:cover;object-position:50% center}.hero-immersive:before{background:linear-gradient(180deg,rgba(10,12,13,.08) 0px,rgba(10,12,13,.16) 90px,rgba(10,12,13,.75) 205px,#101010 340px)}.hero-content{max-width:none;padding-bottom:28px}.hero-immersive .eyebrow{font-size:7px;letter-spacing:1.2px;margin-bottom:18px}.hero-immersive h1{font-size:clamp(34px,9.2vw,46px);letter-spacing:-1.2px;line-height:1.08;margin-bottom:20px}.hero-immersive .hero-copy>p{font-size:13px;line-height:1.75;margin-bottom:13px}.hero-immersive .hero-copy>.hero-support{font-size:11px;line-height:1.75;margin-bottom:22px}.hero-immersive .button{font-size:11px;padding:15px 20px;width:100%}.hero-production{gap:14px;padding:20px 0 19px}.hero-production>div{padding-right:0}.hero-production span{font-size:7px;letter-spacing:.7px}.hero-production p{font-size:9px;line-height:1.7;margin-top:7px}.hero-illustration{font-size:6px;right:24px;bottom:12px}}
