@@ -193,3 +193,27 @@ header{margin:0;padding:0 5%;border-bottom:0}
 
 /* Single-line package heading scales with phone width. */
 @media(max-width:600px){#planos>h2{white-space:nowrap;font-size:5.9vw;line-height:1.2;letter-spacing:-.035em}}
+
+/* Compact package comparison, sized to available screen height. */
+.plans .plan-grid{margin-top:28px}
+.plans .product-plan .plan-intro{min-height:148px;padding:25px 28px 0}
+.plans .product-plan h3{margin:10px 0 10px}
+.plans .product-plan .plan-description{max-width:330px}
+.plans .plan-art{height:clamp(210px,24svh,240px)}
+.plans .frame-back{height:180px;width:115px;top:24px}
+.plans .frame-front{height:205px;width:130px;top:2px}
+.plans .frame-left,.plans .frame-right{height:195px;width:126px;top:8px}
+.plans .frame-left{left:calc(50% - 116px)}
+.plans .frame-right{left:calc(50% - 3px)}
+.plans .frame-bottom{font-size:17px;bottom:17px;left:13px;right:9px}
+.plans .campaign-window{top:21px;padding:13px}
+.plans .campaign-body{height:95px;margin-top:11px}
+.plans .campaign-caption{margin-top:12px}
+.plans .plan-actions{padding:17px 28px 8px}
+.plans .product-plan .plan-details summary{padding:13px 0}
+.plans .product-plan .plan-details ul{margin:0 0 13px;line-height:1.55}
+.plans .product-plan .plan-details li{margin:9px 0}
+.plans .plan-note{margin-top:18px}
+@media(min-width:601px){.plans{padding-top:60px;padding-bottom:48px}.plans .section-top{margin-bottom:24px}.plans>h2{font-size:clamp(36px,3.6vw,56px)}}
+@media(max-width:1000px) and (min-width:601px){.plans .product-plan .plan-intro{min-height:155px;padding-left:21px;padding-right:21px}.plans .plan-actions{padding-left:21px;padding-right:21px}.plans .product-plan .plan-description{font-size:11px}}
+@media(max-width:600px){.plans .product-plan .plan-intro{min-height:155px;padding:25px 25px 0}.plans .plan-art{height:220px}.plans .plan-actions{padding:16px 25px 8px}.plans .plan-grid{margin-top:24px}.plans .product-plan .plan-details li{margin:10px 0}}
