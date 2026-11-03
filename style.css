@@ -23,7 +23,7 @@
 .product-plan.professional{background:#fff;color:#151515}
 .product-plan.professional .plan-description{color:#656568}
 .plan-art{height:270px;position:relative;overflow:hidden;margin:0;isolation:isolate}
-.film-frame{position:absolute;border-radius:15px;background-image:linear-gradient(0deg,#000c,transparent 65%),url('assets/vyse-studio.png');background-size:auto 100%;box-shadow:0 18px 40px #0007;border:1px solid #ffffff25;overflow:hidden}
+.film-frame{position:absolute;border-radius:15px;background-image:linear-gradient(0deg,#000c,transparent 65%),url('assets/profissional-falando.png');background-size:auto 100%;box-shadow:0 18px 40px #0007;border:1px solid #ffffff25;overflow:hidden}
 .frame-label{position:absolute;top:15px;left:14px;font:600 7px 'Inter',sans-serif;letter-spacing:1.8px;color:white}
 .frame-bottom{position:absolute;bottom:22px;left:17px;right:12px;font:600 25px/.98 'Myriad Pro',Impact,sans-serif;letter-spacing:-.4px;color:white}
 .art-essential{background:radial-gradient(ellipse at 65% 65%,#480610 0,transparent 70%)}
@@ -37,7 +37,7 @@
 .campaign-top{display:flex;justify-content:space-between;gap:8px;font-size:6px;letter-spacing:1px;color:#aaa;padding-bottom:14px;border-bottom:1px solid #ffffff1c}
 .campaign-top span:first-child{color:#ff4d42}
 .campaign-body{display:flex;gap:13px;height:113px;margin-top:13px}
-.campaign-preview{width:42%;background:url('assets/vyse-studio.png') 90% center/auto 100%;border-radius:5px}
+.campaign-preview{width:42%;background:url('assets/profissional-falando.png') 90% center/auto 100%;border-radius:5px}
 .campaign-bars{flex:1;display:flex;align-items:end;gap:7px;padding:10px 0 3px;border-bottom:1px solid #ffffff20}
 .campaign-bars span{flex:1;background:linear-gradient(#ff423a,#6b0010);border-radius:3px 3px 0 0;height:30%}
 .campaign-bars span:nth-child(2){height:50%}.campaign-bars span:nth-child(3){height:42%}.campaign-bars span:nth-child(4){height:68%}.campaign-bars span:nth-child(5){height:60%}.campaign-bars span:nth-child(6){height:85%}
@@ -146,3 +146,10 @@ footer .logo{width:184px}
 .process .steps{grid-template-columns:repeat(3,1fr)}
 .hero-copy .button{border-radius:30px;justify-content:center}
 @media(max-width:600px){.hero h1{font-size:clamp(42px,11.4vw,56px);letter-spacing:-1.4px}.process .steps{grid-template-columns:1fr;gap:24px}.process .steps h3{margin:13px 0 8px}.process .steps p{font-size:12px}.hero-copy .small{font-size:11px}.service-number{font-size:9px;letter-spacing:1px}}
+
+/* Show the service being delivered: a talking-head business video. */
+.hero-image{height:clamp(320px,43vw,560px)}
+.hero-image img{display:block;object-position:50% 0}
+.film-frame{background-position:50% center}
+.campaign-preview{background-position:50% center}
+@media(max-width:600px){.hero-image{height:320px}.hero-image img{object-position:50% 0}.hero-image figcaption{font-size:7px;letter-spacing:1px}}
