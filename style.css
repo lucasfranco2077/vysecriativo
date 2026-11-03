@@ -134,3 +134,9 @@ footer{background:#fff;color:#18181b}
 footer>span,footer small{color:#74747a}
 footer small{border-top-color:#e5e5e8}
 @media(max-width:600px){.hero-image{border-radius:15px}.service{border-radius:22px}}
+
+/* Original VYSE artwork: preserve the lettering and source aspect ratio. */
+.logo{display:block;transform:none;font:inherit;letter-spacing:normal;flex-shrink:0;width:184px;line-height:0;margin-left:-15px}
+.logo img{display:block;width:100%;height:auto;object-fit:contain}
+footer .logo{width:184px}
+@media(max-width:600px){.logo,footer .logo{width:157px;margin-left:-13px}}
