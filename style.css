@@ -185,3 +185,8 @@ footer .logo{width:184px}
 @media(min-width:1500px){.hero-immersive{min-height:760px}.hero-content{padding-bottom:65px}}
 @media(max-width:900px) and (min-width:601px){.hero-immersive{padding:48px 5% 24px;min-height:690px}.hero-immersive h1{font-size:58px}.hero-content{max-width:580px}}
 @media(max-width:600px){.hero-immersive{margin:8px 12px 0;border-radius:22px;padding:200px 24px 24px;min-height:0;display:block}.hero-media img{height:340px;object-fit:cover;object-position:50% center}.hero-immersive:before{background:linear-gradient(180deg,rgba(10,12,13,.08) 0px,rgba(10,12,13,.16) 90px,rgba(10,12,13,.75) 205px,#101010 340px)}.hero-content{max-width:none;padding-bottom:28px}.hero-immersive .eyebrow{font-size:7px;letter-spacing:1.2px;margin-bottom:18px}.hero-immersive h1{font-size:clamp(34px,9.2vw,46px);letter-spacing:-1.2px;line-height:1.08;margin-bottom:20px}.hero-immersive .hero-copy>p{font-size:13px;line-height:1.75;margin-bottom:13px}.hero-immersive .hero-copy>.hero-support{font-size:11px;line-height:1.75;margin-bottom:22px}.hero-immersive .button{font-size:11px;padding:15px 20px;width:100%}.hero-production{gap:14px;padding:20px 0 19px}.hero-production>div{padding-right:0}.hero-production span{font-size:7px;letter-spacing:.7px}.hero-production p{font-size:9px;line-height:1.7;margin-top:7px}.hero-illustration{font-size:6px;right:24px;bottom:12px}}
+
+/* Edge-to-edge opening connected directly to the navigation. */
+header{margin:0;padding:0 5%;border-bottom:0}
+.hero-immersive{margin:0;border-radius:0;padding-left:5%;padding-right:5%}
+@media(max-width:600px){header{margin:0;padding:0 5%;border-bottom:0}.hero-immersive{margin:0;border-radius:0;padding-left:6%;padding-right:6%}}
