@@ -297,3 +297,7 @@ main{min-width:0;max-width:100%}
   .hero-immersive .button{font-size:12px;min-height:48px;padding:15px 20px}
   .hero-content{padding-bottom:24px}
 }
+
+/* Desktop hero shares the same outer edges as the centered site content. */
+@media(min-width:901px){.hero-immersive{width:90%;max-width:1320px;margin:0 auto;padding:52px 48px 25px;border-radius:0}.hero-immersive .hero-content{max-width:100%}.hero-immersive h1{font-size:clamp(46px,4.1vw,64px)}}
+@media(min-width:601px) and (max-width:900px){.hero-immersive{width:90%;max-width:1320px;margin:0 auto;padding-left:32px;padding-right:32px;border-radius:0}}
