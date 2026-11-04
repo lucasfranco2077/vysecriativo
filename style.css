@@ -262,3 +262,38 @@ main{min-width:0;max-width:100%}
 .plan-grid{overscroll-behavior-x:contain}
 @media(min-width:601px){.plans .plan-grid{grid-template-columns:repeat(3,minmax(0,1fr));overflow-x:clip}}
 @supports not (overflow:clip){html,body{overflow-x:hidden}}
+
+/* Consistent reading width and stronger proportions, preserving VYSE branding. */
+@media(min-width:901px){
+  header,.section{padding-left:max(5%,calc((100% - 1320px)/2));padding-right:max(5%,calc((100% - 1320px)/2))}
+  footer{padding-left:max(5%,calc((100% - 1320px)/2));padding-right:max(5%,calc((100% - 1320px)/2))}
+  .hero-immersive{padding:58px max(5%,calc((100% - 1320px)/2)) 25px;min-height:0;gap:46px;justify-content:flex-start}
+  .hero-content{padding-bottom:0}
+  .hero-immersive .eyebrow{font-size:10px;letter-spacing:1.6px;margin-bottom:24px}
+  .hero-immersive h1{font-size:clamp(50px,4.3vw,68px);line-height:1.06;margin-bottom:26px}
+  .hero-immersive .hero-copy{max-width:535px}
+  .hero-immersive .hero-copy>p{font-size:17px;line-height:1.7;margin-bottom:17px}
+  .hero-immersive .hero-copy>.hero-support{font-size:14px;line-height:1.75;margin-bottom:28px}
+  .hero-immersive .button{font-size:14px;padding:18px 28px;min-height:54px}
+  .hero-production{padding:23px 0 22px;gap:32px}
+  .hero-production span{font-size:9px;letter-spacing:1.2px}
+  .hero-production p{font-size:12px;line-height:1.65;margin-top:8px}
+  .hero-illustration{font-size:8px}
+  nav{font-size:14px;gap:32px}
+  .header-cta{font-size:13px;padding:13px 20px}
+}
+@media(min-width:601px) and (max-width:900px){
+  .hero-immersive{min-height:0;gap:34px;padding-top:44px;justify-content:flex-start}
+  .hero-content{padding-bottom:0}
+  .hero-immersive .hero-copy{max-width:480px}
+  .hero-immersive .hero-copy>p{font-size:16px}
+  .hero-immersive .hero-copy>.hero-support{font-size:13px}
+  .hero-immersive .button{font-size:13px;padding:17px 25px}
+  .hero-production p{font-size:11px}
+}
+@media(max-width:600px){
+  .hero-immersive .hero-copy>p{font-size:14px;line-height:1.7}
+  .hero-immersive .hero-copy>.hero-support{font-size:12px;line-height:1.7;margin-bottom:22px}
+  .hero-immersive .button{font-size:12px;min-height:48px;padding:15px 20px}
+  .hero-content{padding-bottom:24px}
+}
