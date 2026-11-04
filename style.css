@@ -297,3 +297,6 @@ main{min-width:0;max-width:100%}
   .hero-immersive .button{font-size:12px;min-height:48px;padding:15px 20px}
   .hero-content{padding-bottom:24px}
 }
+
+/* Small breathing room between the hero paragraph and its action. */
+.hero-immersive .hero-copy>.button{margin-top:12px}
