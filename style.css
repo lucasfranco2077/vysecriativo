@@ -457,3 +457,6 @@ header .menu-panel a:hover,header .menu-panel a:focus-visible{background:#ffffff
 .value-benefits strong{font-size:11px;line-height:1.5;font-weight:500}
 .value-benefits li>span{display:none}
 }
+
+/* Align the mobile Reel with the shared content edges. */
+@media(max-width:600px){.delivery-value .value-visual{width:100%;align-items:stretch}.delivery-value .value-reel{width:100%;max-width:none}.delivery-value .value-visual figcaption{max-width:none;width:100%;align-self:center}}
