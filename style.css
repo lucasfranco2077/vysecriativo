@@ -431,3 +431,29 @@ header .menu-panel a:hover,header .menu-panel a:focus-visible{background:#ffffff
 .value-visual figcaption{max-width:340px;margin-top:21px;display:flex;flex-direction:column;gap:5px;font-size:9px;line-height:1.6;color:#8a8a90}.value-visual figcaption strong{font-size:12px;color:#55555c;font-weight:500}
 @media(max-width:1000px) and (min-width:601px){.delivery-value{gap:28px;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}.delivery-value h2{font-size:36px;letter-spacing:-1px}.value-title-line{display:inline}.value-title-line:after{content:' '}.value-lead{font-size:13px}.value-reel{width:285px}.value-benefits strong{font-size:12px}.value-benefits li>span{font-size:11px}}
 @media(max-width:600px){.delivery-value{grid-template-columns:1fr;gap:32px;padding-top:52px;padding-bottom:55px}.delivery-value h2{font-size:35px;line-height:1.13;letter-spacing:-1px;margin:22px 0}.value-title-line{display:inline}.value-title-line:after{content:' '}.value-lead{font-size:13px}.value-benefits{margin-top:22px}.value-benefits li{padding:12px 0}.value-reel{width:300px}.value-reel-caption>span{font-size:13px}.value-visual figcaption{font-size:9px;margin-top:19px}}
+
+/* A shorter, visual-first delivery section on phones. */
+.value-mobile-title,.value-mobile-lead{display:none}
+@media(max-width:600px){
+.delivery-value{display:flex;flex-direction:column;align-items:stretch;gap:0;padding-top:40px;padding-bottom:42px}
+.value-copy{display:contents}
+.value-copy>.eyebrow{order:0;font-size:8px;letter-spacing:1.7px}
+.delivery-value h2{order:1;font-size:clamp(28px,7.8vw,37px);line-height:1.13;letter-spacing:-.8px;margin:18px 0 16px}
+.delivery-value .value-title-line,.value-desktop-lead{display:none}
+.value-mobile-title,.value-mobile-lead{display:block}
+.value-lead{order:2;max-width:330px;font-size:13px;line-height:1.7;margin:0}
+.value-visual{order:3;margin-top:25px;padding:0}
+.value-reel{width:min(270px,100%);border-radius:14px;box-shadow:0 14px 35px #0000001a}
+.value-reel-caption>span{font-size:12px}
+.value-reel-top{top:17px;font-size:17px}
+.value-social-rail{gap:15px;right:10px;bottom:24px}.value-social-rail svg{width:23px;height:23px}
+.value-reel-bottom{bottom:24px;left:15px;right:49px;gap:9px}
+.value-profile{gap:6px}.value-profile strong{font-size:10px}.value-avatar{width:25px;height:25px}.value-follow{padding:3px 5px;font-size:8px}
+.value-reel-bottom p{font-size:9px}.value-audio{font-size:7px}
+.value-visual figcaption{margin-top:15px;gap:4px;max-width:270px;font-size:8px;line-height:1.5}.value-visual figcaption strong{font-size:11px}
+.value-benefits{order:4;display:flex;flex-direction:column;gap:10px;margin:24px 0 0;padding-top:19px;border-top:1px solid #e7e7ea}
+.value-benefits li{border:0;padding:0;display:flex;flex-direction:row;align-items:center;gap:9px}
+.value-benefits li:before{content:'';width:4px;height:4px;background:#ff2525;border-radius:50%;flex-shrink:0}
+.value-benefits strong{font-size:11px;line-height:1.5;font-weight:500}
+.value-benefits li>span{display:none}
+}
