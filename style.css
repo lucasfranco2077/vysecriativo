@@ -318,3 +318,22 @@ html{width:100%}body{width:100%;max-width:none;margin:0}
 
 /* Shared desktop alignment at the user's marked 8.2% inset. */
 @media(min-width:901px){header,.section,footer,.hero-immersive{padding-left:8.2%;padding-right:8.2%}}
+
+/* Navigation integrated with the production photo; original logo rendered white. */
+header{position:absolute;top:0;left:0;right:0;width:100%;z-index:10;background:transparent;color:#fff;border:0}
+header .logo img{filter:brightness(0) invert(1)}
+header nav a{color:#f5f5f7}
+header nav a:hover{color:#ff6258}
+header .header-cta{color:#fff;border-color:#ffffff66;background:transparent}
+header .header-cta:hover{background:#ff1e1e;border-color:#ff1e1e}
+.hero-immersive{min-height:650px;padding-top:160px;padding-bottom:116px}
+.hero-immersive:before{background:linear-gradient(180deg,rgba(3,5,7,.95) 0%,rgba(3,5,7,.8) 12%,rgba(3,5,7,.33) 40%,rgba(3,5,7,.08) 70%,rgba(3,5,7,.6) 100%),linear-gradient(90deg,rgba(3,5,7,.76) 0%,rgba(3,5,7,.5) 35%,rgba(3,5,7,.08) 72%)}
+.hero-scroll{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);width:48px;height:48px;display:grid;place-items:center;color:#fff;border-radius:50%;z-index:2}
+.hero-scroll:hover{background:#ffffff14}
+.scroll-arrow{position:relative;display:block;width:2px;height:23px;background:currentColor;animation:invite-scroll 1.9s ease-in-out infinite}
+.scroll-arrow:after{content:'';position:absolute;width:11px;height:11px;left:-5px;bottom:0;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
+@keyframes invite-scroll{0%,100%{transform:translateY(-4px)}50%{transform:translateY(5px)}}
+@media(min-width:901px){.hero-immersive{min-height:650px;padding-top:158px;padding-bottom:116px}}
+@media(min-width:601px) and (max-width:900px){.hero-immersive{min-height:620px;padding-top:140px;padding-bottom:108px}}
+@media(max-width:600px){header{height:78px}.hero-immersive{padding-top:235px;padding-bottom:105px;min-height:0}.hero-media img{height:430px;object-position:50% center}.hero-immersive:before{background:linear-gradient(180deg,rgba(5,7,8,.88) 0px,rgba(5,7,8,.55) 85px,rgba(5,7,8,.12) 150px,rgba(5,7,8,.55) 250px,#101010 425px)}.hero-scroll{bottom:27px}.hero-illustration{bottom:12px}.hero-immersive h1{margin-top:0}}
+@media(prefers-reduced-motion:reduce){.scroll-arrow{animation:none}}
