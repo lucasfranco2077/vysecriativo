@@ -337,3 +337,19 @@ header .header-cta:hover{background:#ff1e1e;border-color:#ff1e1e}
 @media(min-width:601px) and (max-width:900px){.hero-immersive{min-height:620px;padding-top:140px;padding-bottom:108px}}
 @media(max-width:600px){header{height:78px}.hero-immersive{padding-top:235px;padding-bottom:105px;min-height:0}.hero-media img{height:430px;object-position:50% center}.hero-immersive:before{background:linear-gradient(180deg,rgba(5,7,8,.88) 0px,rgba(5,7,8,.55) 85px,rgba(5,7,8,.12) 150px,rgba(5,7,8,.55) 250px,#101010 425px)}.hero-scroll{bottom:27px}.hero-illustration{bottom:12px}.hero-immersive h1{margin-top:0}}
 @media(prefers-reduced-motion:reduce){.scroll-arrow{animation:none}}
+
+/* Minimal header navigation, shared by desktop and mobile. */
+.header-menu{position:relative;margin-left:auto}
+.menu-toggle{display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:7px;width:48px;height:48px;padding:9px;border:0;background:transparent;color:#fff;cursor:pointer}
+.menu-toggle>span{display:block;width:30px;height:2px;background:currentColor;transition:transform .2s,width .2s}
+.menu-toggle>span:last-child{width:20px}
+.menu-toggle:hover>span:last-child{width:30px}
+.menu-toggle:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.menu-toggle[aria-expanded="true"]>span:first-child{transform:translateY(4.5px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"]>span:last-child{width:30px;transform:translateY(-4.5px) rotate(-45deg)}
+header .menu-panel{position:absolute;top:calc(100% + 14px);right:0;width:240px;display:flex;flex-direction:column;gap:0;padding:12px 0;background:rgba(12,13,15,.97);border:1px solid #ffffff24;box-shadow:0 16px 40px #0005;backdrop-filter:blur(14px)}
+header .menu-panel[hidden]{display:none}
+header .menu-panel a{font:500 15px/1.4 'Inter',Arial,sans-serif;padding:17px 24px;color:#f5f5f7}
+header .menu-panel a:hover,header .menu-panel a:focus-visible{background:#ffffff0c;color:#ff6258}
+@media(max-width:600px){.menu-toggle{width:44px;height:44px;padding-right:2px}header .menu-panel{width:min(260px,86vw);top:calc(100% + 12px)}header .menu-panel a{font-size:15px;padding:18px 24px}}
+@media(prefers-reduced-motion:reduce){.menu-toggle>span{transition:none}}

@@ -35,3 +35,25 @@ positionPlanArrow();
 window.addEventListener('resize', positionPlanArrow);
 window.addEventListener('load', positionPlanArrow);
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(positionPlanArrow);
+
+const menuToggle = document.querySelector('.menu-toggle');
+const siteMenu = document.getElementById('site-menu');
+if (menuToggle && siteMenu) {
+  function setMenuOpen(open, restoreFocus = false) {
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+    siteMenu.hidden = !open;
+    if (restoreFocus) menuToggle.focus();
+  }
+  menuToggle.addEventListener('click', () => setMenuOpen(menuToggle.getAttribute('aria-expanded') !== 'true'));
+  siteMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenuOpen(false)));
+  document.addEventListener('click', event => {
+    if (!event.target.closest('.header-menu')) setMenuOpen(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') setMenuOpen(false, true);
+  });
+  document.addEventListener('focusin', event => {
+    if (!event.target.closest('.header-menu')) setMenuOpen(false);
+  });
+}
