@@ -303,3 +303,6 @@ main{min-width:0;max-width:100%}
 
 /* Backgrounds fill the viewport; text keeps its internal reading width. */
 html{width:100%}body{width:100%;max-width:none;margin:0}
+
+/* The opening background reaches both viewport edges at every breakpoint. */
+.hero-immersive{width:100%;max-width:none;margin-left:0;margin-right:0}
