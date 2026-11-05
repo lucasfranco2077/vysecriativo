@@ -306,3 +306,12 @@ html{width:100%}body{width:100%;max-width:none;margin:0}
 
 /* The opening background reaches both viewport edges at every breakpoint. */
 .hero-immersive{width:100%;max-width:none;margin-left:0;margin-right:0}
+
+/* One clear offer, one short explanation, one action. */
+.hero-immersive{justify-content:center;gap:0;min-height:580px;padding-top:78px;padding-bottom:78px}
+.hero-immersive .hero-content{padding-bottom:0}
+.hero-immersive .hero-copy{max-width:490px}
+.hero-immersive .hero-copy>p{margin-bottom:26px}
+@media(min-width:901px){.hero-immersive{min-height:560px;padding-top:74px;padding-bottom:74px;gap:0;justify-content:center}.hero-immersive h1{font-size:clamp(46px,4vw,64px)}}
+@media(min-width:601px) and (max-width:900px){.hero-immersive{min-height:530px;padding-top:56px;padding-bottom:56px}.hero-immersive h1{font-size:clamp(36px,5vw,44px)}}
+@media(max-width:600px){.hero-immersive{min-height:0;padding-top:200px;padding-bottom:44px}.hero-immersive h1{font-size:clamp(32px,8.8vw,44px);line-height:1.08}.hero-immersive .hero-title-line{max-width:none;white-space:normal;text-wrap:balance}.hero-immersive .hero-copy>p{font-size:14px;line-height:1.7;margin-bottom:24px}.hero-immersive .hero-copy>.button{margin-top:0}.hero-immersive .hero-content{padding-bottom:0}}
